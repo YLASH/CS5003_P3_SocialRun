@@ -1,0 +1,162 @@
+/* profile.css */
+body {
+    background: #eef5ff;
+    font-family: "Open Sans", sans-serif;
+    margin: 0 2em;
+    padding: 0;
+  }
+  
+  .header-container {
+    padding: 5px 20px;
+    /* margin-bottom: 30px; */
+  }
+  
+  .header-content {
+    margin: 20px;
+  }
+  
+  h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #e8c872;
+  }
+  
+  h2.user-profile {
+    text-align: left;
+    font-size: 1.5em;
+  
+    margin: 0px;
+    color: #e8c872;
+  }
+  
+  h2 {
+    font-size: 15px;
+    text-align: center;
+    color: #637a9f;
+  }
+  
+  h3 {
+    color: #637a9f;
+  }
+  
+  /* main {
+    padding: 20px;
+  } */
+  
+  #user-profile,
+  .user-dashboard,.weather-container ,.recommend-container,.stats-container,.past-event{
+    color: #637a9f;
+    background-color: #e9f0fa;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-field h2 {
+    margin-top: 0;
+  }
+  
+  .full-dashboard {
+    display: grid;
+    grid-template-columns: 34% 65%;
+    grid-template-rows: 100%;
+    grid-column-gap: 2%;
+  }
+  .user-dashboard {
+    grid-column-start: 1;
+    grid-row-start: 1;
+  }
+  
+  .user-recomm {
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+  
+  .stats-container {
+    display: flex;
+    margin-top: 10px;
+    /* margin-left: 5%;
+    margin-right: 5%; */
+  }
+  
+  .stats {
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+
+  .run-container {
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); */
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #637a9f;
+    border-bottom: 1px solid #637a9f;
+  }
+  
+  button {
+    margin: 0;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 3px 10px;
+  }
+  
+  #backButton {
+    cursor: pointer;
+    font-size: 16px;
+    border: 1px solid #e8c872;
+    background-color: transparent;
+    color: #e8c872;
+    margin: 0;
+    padding: 2px 10px;
+    border-radius: 20px;
+  }
+  
+  #backButton:hover {
+    background-color: #e8c872;
+    color: #ffffff;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  h4#username {
+    margin: 0;
+  }
+  
+  .profile-field {
+    display: flex;
+    gap: 5%;
+  }
+  
+
+.event-item {
+    align-items: center;
+    display: flex;
+    margin: 0px;
+  }
+
+  .comingevent-title{
+    margin-bottom: 0px;
+  }

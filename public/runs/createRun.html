@@ -1,0 +1,79 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./runs/create.css">
+    
+    <!-- Import font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Import leafLet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <title>Social Runner: Create Your Run</title>
+  </head>
+
+<body>
+    <header class="header-container">
+        <!-- Header: title + credits -->
+        <div class="header-content"> 
+          <div> 
+            <h1>Social Runner</h1>
+            <!-- <h2> Produced by 230028764, 22002995, 220024326, 230008550, 230000294, and 230011850 for assessment 3 of CS5003 </h2> -->
+          </div>
+      </header>
+  
+    </header>
+        <h1>Create Your Run</h1>
+
+    <div id="map"><p>where is the map</p></div>
+
+    <p id="mapMessage">Click on the map to set the Starting Point.</p>
+    <div id="mapButtons">
+        <button id="undoStartingPoint">Undo Starting Point</button>
+        <button id="undoMeetingPoints">Undo Meeting Points</button>
+        <button id="undoEndPoint">Undo End Point</button>
+        <button id="clearPoints">Clear Points</button>
+        <button type="button" onclick="window.location.href = '../'">Back to Homepage</button>
+    </div>
+
+    <div class="form-container">
+        <div id="createRunForm">
+          <label for="title">Title:</label>
+          <input type="text" id="title" name="title" required>
+          <label for="dateTime">Date and Time:</label>
+          <input type="datetime-local" id="dateTime" name="dateTime" required>
+          <label for="description">Description:</label>
+          <textarea id="description" name="description"></textarea>
+          <label for="startingPoint">Starting Point:</label>
+          <input type="text" id="startingPoint" name="startingPoint" required>
+          <label for="endPoint">End Point:</label>
+          <input type="text" id="endPoint" name="endPoint" required>
+          <label for="meetingPoints">Meeting Points:</label>
+          <input type="text" id="meetingPoints" name="meetingPoints">
+          <label for="route">Route:</label>
+          <textarea type="text" id="route" name="route" required></textarea>
+          <label for="distance">Distance:</label>
+          <input type="text" id="distance" name="distance" required>
+          <label for="pace">Pace:</label>
+          <input type="text" id="pace" name="pace" required>
+          <div id="submit-success" class="submit-success"></div>
+          <button id="submit"type="submit">Create Run</button>
+          <button id="cancel"type="button">Cancel</button>    
+        </div>
+        <p id="errorMessage"></p>
+    </div>
+    <script src="./runs/create.js" ></script>
+    <script src="./runs/map.js" ></script>
+</body>
+
+</html>

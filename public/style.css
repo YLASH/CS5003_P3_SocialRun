@@ -1,0 +1,186 @@
+body {
+  background: #eef5ff;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header-container {
+  padding: 5px 20px;
+  /* margin-bottom: 30px; */
+}
+
+.header-content {
+  margin: 20px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 5%;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #e8c872;
+}
+
+h2 {
+  font-size: 15px;
+  text-align: center;
+  color: #637a9f;
+}
+
+.logged-out {
+  display: inline;
+}
+
+.user-created {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  margin-bottom: 20px;
+}
+
+button {
+  margin: 0;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 3px 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+input[type="text"]#comment {
+  width: 100%; /* Width adjusted to 100% to fill container width */
+  height: 50px; /* Increased height for better usability and aesthetics */
+  margin: 8px 0; /* Added top and bottom margin to maintain distance from surrounding elements */
+  padding: 12px; /* Increased padding for more space between text and border */
+  font-size: 18px; /* Increased font size for better readability */
+  border: 1px solid #ccc; /* Thin border remains unchanged */
+  border-radius: 4px; /* Rounded corners also remain unchanged */
+  display: block; /* Block display ensures it occupies a new line */
+}
+
+input[type="text"]#comment:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 8px rgba(74, 144, 226, 0.5);
+}
+
+.run-container,
+.user-joined- {
+  padding: 20px; /* Increased padding so content does not touch the border */
+  margin-bottom: 10px;
+  border-radius: 8px; /* Added border-radius */
+  background-color: #f0f0f0; /* Slight background color */
+
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #637a9f;
+}
+
+.comment-box {
+  margin: 1%;
+  padding: 1%;
+  border: 2px solid #707070; /* Border color changed to dark gray */
+  border-radius: 10px; /* Added rounded corners */
+}
+
+.post-description {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+#user-greeting {
+  color: #e8c872;
+  font-weight: bold; /* Bold font */
+}
+
+.user-update {
+  display: flex;
+  gap: 5%;
+  width: 50%;
+  align-items: center;
+}
+
+.btn-log-out,
+.btn-log-in,
+.btn-reg {
+  cursor: pointer;
+  font-size: 16px;
+  border: 1px solid #e8c872;
+  background-color: transparent;
+  color: #e8c872;
+  margin: 0;
+  padding: 2px 10px;
+  border-radius: 20px;
+}
+
+.btn-log-out:hover,
+.btn-log-in:hover,
+.btn-reg:hover {
+  background-color: #e8c872;
+  color: #ffffff;
+}
+
+.body-container {
+  display: flex;
+  gap: 5%;
+  justify-content: center;
+}
+
+section.all-runs-container {
+  width: 50%;
+}
+
+h3.user-created-header {
+  padding-top: 20px;
+  padding-left: 20px;
+  margin: 0px;
+  color: #637a9f;
+}
+
+div#logged-in {
+  width: 30%;
+}
+
+div#user-created-container {
+  padding: 10px;
+}
+
+h3 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.display {
+  display: none;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+label {
+  color: #e8c872;
+}
+
+input {
+  outline: 0;
+  border-radius: 20px;
+  border: 1px solid #e2dccb;
+  background: transparent;
+  padding: 3px 10px;
+}

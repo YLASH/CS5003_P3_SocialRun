@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="../profile.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <!-- Header: title + credits -->
+    <header class="header-container">
+      <div class="header-content"> 
+          <h1>Social Runner</h1>
+        
+      </div>
+    </header>
+
+    <main>
+      <section id="user-profile">
+        <h2 class="user-profile">User Profile</h2>
+        <div class="profile-field">
+          <h4 id="username"></h4>
+          <!-- <button type="button" id="create-run">Create a Run</button> -->
+          <button id="backButton">Back to Homepage</button>
+          <!-- Add additional fields as necessary -->
+      </section>
+
+      <section class="full-dashboard">
+        <section class="user-dashboard"> 
+        <div class="routes-field">
+          <div class="user-created-container" id="usercreatedruns">
+              <h3 class="user-created-header">Your Routes:</h3>
+              
+              <button type="button" id = "create-run"> Create a Run </button>
+              <div id="user-created-container">
+              <!-- user created run go here -->
+              </div>
+          </div>
+      
+          <div class="user-joined-" id="userinterestedruns">
+            <h3>Runs you are interested in:</h3>
+            <div id="user-joined-container">
+            <!--  run the user has joined go here -->
+            </div>
+          </div>
+        </div>
+        </section>
+
+        <section class="user-recomm"> 
+           
+            <div class="weather-container">
+              <h3 class="user-header">Inform</h3>
+              <div id="date_data_display"></div>
+              
+              <div id="comingevent"> <h4 class="comingevent-title"> Coming up Event</h4> 
+                  <!-- <table class="coming_tb"  style="border: 1px solid black;">
+                    <tr id="furture"></tr>  
+                  </table> -->
+              </div>
+            </div>
+
+
+              <div class="recommend-container">
+                <br>
+                <button id = "recommend-run-button"> Recommend a Run (based on my average distance)</button>
+
+                <div id="recommendedRun"><p> </p> </div>
+              </div>
+    
+            <div class="stats-container">
+              <div class="stats">
+                  <h2>My Runs</h2> 
+                  <canvas id="myChart" width="200" height="125"></canvas>
+              </div>
+               <div class="stats">
+                  <h2>Monthly Stats</h2>
+                  <canvas id="monthChart" width="200" height="250"></canvas>
+              </div>
+             <div class="stats">
+                  <h2>Predicted Runs</h2>
+                  <canvas id="predictedRunsChart" width="200" height="250"></canvas>
+              </div> 
+            </div>
+            <div class="past-event">
+              <h3>Past Runs</h2> 
+                  <div id="history" style="color: gray;">
+
+                  </div>
+    
+            </div>
+          </div>
+        </section>  
+      </section>
+    
+    </main>
+
+<script type = "module" src="../js/profile.js"></script>
+</body>
+</html>

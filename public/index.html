@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Import font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Our title -->
+    <title>Social Runner</title>
+  </head>
+
+  <body>
+    <!-- Header: title + credits -->
+    <header class="header-container">
+      <div class="header-content">
+        <div>
+          <h1>Social Runner</h1>
+          <h2>
+            Produced by 230028764, 22002995, 220024326, 230008550, 230000294,
+            and 230011850 for assessment 3 of CS5003
+          </h2>
+        </div>
+      </div>
+    </header>
+    <div class="nav-container">
+      <div id="auth-container">
+        <label for="username">Username</label>
+        <input type="text" id="username" required />
+        <label for="password">Password </label>
+        <input type="password" id="password" required />
+        <button type="button" id="log-in-main" class="btn-log-in">
+          Log in
+        </button>
+        <button type="button" id="reg-main" class="btn-reg">Register</button>
+        <br />
+      </div>
+
+      <!-- display when reg/login successfully -->
+      <div class="user-update display">
+        <p id="user-greeting"></p>
+        <!-- profile link -->
+        <a href="./userpofile/"><h2>Go to my profile</h2></a>
+
+        <button type="button" id="btn-log-out" class="btn-log-out">
+          Log out
+        </button>
+      </div>
+
+      <div class="create-run-container">
+        <button type="button" id="create-run">Submit a Run</button>
+      </div>
+    </div>
+
+    <div class="body-container">
+      <section class="all-runs-container">
+        <div id="all-runs-container">
+          <!--  run the user has joined go here -->
+        </div>
+        <!-- <button id="test"> test </button> -->
+        <div class="all-runs-container">
+          <!-- Each new run is generated and stored here:  -->
+        </div>
+      </section>
+
+      <!-- Greetings + Log Out -->
+      <div id="logged-in" class="logged-in hidden">
+        <div class="user-created">
+          <h3 class="user-created-header">My Routes:</h3>
+          <div id="user-created-container">
+            <!-- user created run go here -->
+          </div>
+        </div>
+
+        <div class="user-joined-">
+          <h3>Runs you are interested in:</h3>
+          <div id="user-joined-container">
+            <!--  run the user has joined go here -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Script tag -->
+    <script type="module" src="js/client.js"></script>
+  </body>
+</html>
